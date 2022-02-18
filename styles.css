@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Fira sans", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #1b232c;
+}
+
+input, button {
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+}
+
+
+header, main{
+    padding: 2rem 1rem;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    color: #FEF9E6;
+    text-shadow: 0 0 0.1em #FEF9E6;
+    text-decoration: underline;
+}
+
+#to_do_wrapper {
+    display: flex;
+}
+
+#to_do_input::placeholder{
+    color: #FEF9E6;
+}
+
+#to_do_input {
+    flex: 0.8 1 0%;
+    background: #0B1320;
+    color: #FEF9E6;;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+
+#to_do_add_button {
+    color: #FEF9E6;
+    text-shadow: 0 0 0.1em #FEF9E6;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+#all_tasks h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    color: #FEF9E6;
+    text-shadow: 0 0 0.1em #FEF9E6;
+    text-decoration: underline;
+}
+
+#all_tasks .one_task {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0B1320;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+#all_tasks .one_task .content .text {
+    color: #FEF9E6;
+    font-size: 1.2rem;
+}
+
+#all_tasks .one_task .actions .edit {
+    color: #FEF9E6;
+    text-shadow: 0 0 0.1em #FEF9E6;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+#all_tasks .one_task .actions .delete{
+    color: crimson;
+    font-size: 1.2rem;
+    text-shadow: 0 0 0.1em crimson;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.one_task .content {
+    flex: 1 1 0%;
+}
+
+.text {
+    width: 100%;
+}
